@@ -19,14 +19,18 @@ const HamburgerNav = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 60px;
-    height:60px;
+    width: 50px;
+    height:40px;
     top: 30px;
     right: 40px;
+    @media (min-width: 820px) {
+        display: none;
+    }
+    
 `
 const Nav = styled.div`
-    width: 60px;
+    width: 50px;
     height: 10px;
     border-radius: 5px;
-    background: #9d9d9d;
+    background: #fc4103;
 `

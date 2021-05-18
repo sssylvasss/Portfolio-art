@@ -9,8 +9,8 @@ return (
     <Main>
     
         <CollageContainer>
-            <ArtPicsBigger src="../assets/200Ylva_landoff_lindberg_collage.gif" alt="Collage"/> 
-            <ArtPicsBigger src="../assets/199collage stigande svan, smal.jpg" alt="Collage"/>    
+            <ArtPicsBiggest src="../assets/200Ylva_landoff_lindberg_collage.gif" alt="Collage"/> 
+            <ArtPics src="../assets/199collage stigande svan, smal.jpg" alt="Collage"/>    
             <ArtPics src="../assets/198collage bäver med paraply, small.jpg" alt="Collage"/> 
             <ArtPics src="../assets/196collage papperssvan och lax.jpg" alt="Collage"/> 
             <ArtPics src="../assets/197collage bäver möter papperssvan.jpg" alt="Collage"/> 
@@ -50,6 +50,10 @@ const ArtPicsBigger =styled.img`
     @media (min-width: 820px) {
         width: auto;
         height: 400px;
+            &:hover {
+                transition: 0.4s ease;
+                height:500px;
+    }
     }
 
     @media (min-width: 1200px) {
@@ -65,9 +69,14 @@ const ArtPics =styled.img`
     width: 100%;
     margin: 5px;
 
+
     @media (min-width: 820px) {
         width: auto;
         height: 300px;
+        &:hover {
+            transition: 0.4s ease;
+            height:400px;
+    }
     }
 
     @media (min-width: 1200px) {
@@ -75,7 +84,7 @@ const ArtPics =styled.img`
         width:auto;
     }
     @media (min-width: 2000px) {
-        height: 500px;
+        height: 450px;
     }
 `;
 

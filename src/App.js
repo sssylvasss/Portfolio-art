@@ -38,7 +38,7 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-   @media (min-width: 820px) {
+    @media (min-width: 820px) {
         width: 95%;
         
     }
